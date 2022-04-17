@@ -44,7 +44,7 @@ function agregarStringInvertida() {
   class Persona {
     
     }
-    detalle(){
+    detalle();{
     
     
     }
