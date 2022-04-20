@@ -5,41 +5,27 @@ function mayuscula(nombre) {
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 4ec0859dba0d881f73149a9b21438923035d0c31
   nuevo= nombre[0].toUpperCase();
   let restoDelSaludo = nombre.slice(1);
   let nuevoSaludo = nuevo + restoDelSaludo;
 return nuevoSaludo;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 4ec0859dba0d881f73149a9b21438923035d0c31
 }
 
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   //Tu código:
-<<<<<<< HEAD
   cb();
-=======
-cb();
->>>>>>> 4ec0859dba0d881f73149a9b21438923035d0c31
 }
 
 function operacionMatematica(n1, n2, cb) {
   //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
-<<<<<<< HEAD
 
   cb(n1, n2)
-=======
-  cb (n1, n2);
->>>>>>> 4ec0859dba0d881f73149a9b21438923035d0c31
 }
 
 function sumarArray(numeros, cb) {
@@ -47,19 +33,14 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-
-cb (numeros.reduce ((acc, elemento)=>acc + elemento))
-  
-
-
+  cb (numeros.reduce ((element, acc) => element +acc))
 }
-
 
 function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-  array.forEach(element =>{ return  cb (element)});
+  array.forEach(element => cb (element))
 }
 
 function map(array, cb) {
@@ -67,6 +48,9 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
+  var array2 = '';
+  array2 = array.map(elemet => cb(elemet));
+  return array2;
 }
 
 function filter(array) {
@@ -74,7 +58,11 @@ function filter(array) {
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
 
-  
+  var array2=  array.filter(element => {
+    if(element.charAt(0)=== 'a'){
+      return element
+    }})
+    return array2
 }
 
 // No modificar nada debajo de esta línea
