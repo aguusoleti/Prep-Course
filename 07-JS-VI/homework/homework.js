@@ -5,27 +5,41 @@ function mayuscula(nombre) {
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4ec0859dba0d881f73149a9b21438923035d0c31
   nuevo= nombre[0].toUpperCase();
   let restoDelSaludo = nombre.slice(1);
   let nuevoSaludo = nuevo + restoDelSaludo;
 return nuevoSaludo;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4ec0859dba0d881f73149a9b21438923035d0c31
 }
 
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   //Tu código:
+<<<<<<< HEAD
   cb();
+=======
+cb();
+>>>>>>> 4ec0859dba0d881f73149a9b21438923035d0c31
 }
 
 function operacionMatematica(n1, n2, cb) {
   //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
+<<<<<<< HEAD
 
   cb(n1, n2)
+=======
+  cb (n1, n2);
+>>>>>>> 4ec0859dba0d881f73149a9b21438923035d0c31
 }
 
 function sumarArray(numeros, cb) {
